@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    color:white;
+    font-size: 30px;
+}
+main{
+    display: flex;
+}
+h2{
+    text-align: center;
+}
+
+.London{
+    width: 100%;
+    background-color: orange;
+    font-size: 25px;
+}
+.Paris{
+    width: 100%;
+    background-color: grey;
+    font-size: 25px;
+
+}
+.Tokyo{
+    width: 100%;
+    background-color: yellow;
+    font-size: 25px;
+
+}
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px ) {
+    main{
+        display: flex;
+    }
+    .London, .Paris, .Tokyo{
+        width: 33,3%;
+        font-size: 18px;
+    }
+    .img{
+        width: 100%;
+    }
+    header{
+        text-align: center;
+    } 
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 0px;
+    }
+    header{
+        font-size: 20px;
+        background-color: pink;
+    }
+    .London, .Paris, .Tokyo{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .img{
+        width: 100%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+@media screen  and (min-width:600px) and (max-width:800px){
+    main{
+        display: block;
+    }
+    header{
+        font-size: 20px;
+        background-color: blue;
+    }
+    
+    .London, .Paris, .Tokyo{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .img{
+        width: 100%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+    
+}
+@media screen  and (min-width:375px) and (max-width:812px){
+    main{
+        display: block;
+    }
+    header{
+        font-size: 20px;
+        background-color: blue;
+    }
+    
+    .London, .Paris, .Tokyo{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .img{
+        width: 100%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+    
+}
+@media screen and (min-width:320px) and (max-width:568px){
+    main{
+        display: block;
+    }
+    header{
+        font-size: 20px;
+        background-color: blue;
+    }
+    
+    .London, .Paris, .Tokyo{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .img{
+        width: 100%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+    
+}
